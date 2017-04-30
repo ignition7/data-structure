@@ -1,17 +1,21 @@
 public class Test {
 
     public static void main(String[] args) {
-        int[] arr = {3, 9, 5, 45, 6};
-//        for (int anArr : arr) {
-//            System.out.println(anArr);
-//        }
-        SelectionSort selectionSort = new SelectionSort();
-        int[] aa = selectionSort.getSortedList(arr);
+        int[] arr = {53, 9, 5, 45, 6};
+        System.out.println("Before Sorting");
+        printSortedArray(arr);
 
-//        for (int i = 0; i < aa.length; i++) {
-//            System.out.println(aa[i]);
-//        }
+        SelectionSort selectionSort = new SelectionSort(arr);
+        System.out.println("After Sorting");
+        printSortedArray(selectionSort.getSortedList());
 
+    }
+
+    private static void printSortedArray(int[] result) {
+        for (int Arr : result) {
+            System.out.println(Arr);
+
+        }
     }
 
 }

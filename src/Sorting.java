@@ -1,3 +1,5 @@
 public interface Sorting {
-    public int[] getSortedList();
+
+     int[] getSortedList();
+
 }
